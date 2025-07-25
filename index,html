@@ -10,8 +10,27 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
-  <h1>Welcome to Tippecanoe County Dashboard</h1>
-  <p>This is a test deployment page. Let's make it shine!</p>
+  <header>
+    <h1>Welcome to Tippecanoe County Dashboard</h1>
+    <p>Your gateway to weather, restaurants, and history!</p>
+  </header>
+
+  <main>
+    <section id="weather">
+      <h2>Current Weather</h2>
+      <div id="weather-widget">Loading weather data...</div>
+    </section>
+
+    <section id="restaurants">
+      <h2>Local Restaurants</h2>
+      <div id="restaurant-list">Loading restaurants...</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Rudy · Last updated <span id="timestamp"></span></p>
+  </footer>
+
   <script src="js/clock.js"></script>
 </body>
 </html>
